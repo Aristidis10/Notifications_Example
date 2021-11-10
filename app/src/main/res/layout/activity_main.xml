@@ -6,13 +6,46 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <Button
+        android:id="@+id/Channel2"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="382dp"
+        android:text="SEND ON CHANNEL 2"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Channel1" />
+
+    <Button
+        android:id="@+id/Channel1"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:text="SEND ON CHANNEL 1"
+        app:layout_constraintBottom_toTopOf="@+id/Channel2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MessageBox" />
+
+    <EditText
+        android:id="@+id/MessageBox"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:hint="Message"
+        app:layout_constraintBottom_toTopOf="@+id/Channel1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TitleBox" />
+
+    <EditText
+        android:id="@+id/TitleBox"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="48dp"
+        android:hint="Title"
+        app:layout_constraintBottom_toTopOf="@+id/MessageBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
